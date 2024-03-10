@@ -1,0 +1,11 @@
+python3 tracking_en.py \
+-f exp.py \
+-c1 pretrained/bytetrack_x_mot17.pth.tar \
+-c2 pretrained/bytetrack_x_mot20.tar \
+--path videos/test.mp4 \
+--nms 0.7 \
+--track_thresh 0.7 \
+--track_buffer 90 \
+--match_thresh 0.8 \
+--mot20 \
+--fuse
